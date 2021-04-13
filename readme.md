@@ -21,3 +21,18 @@ This is a jupyter notebook that contains the code for part A- question 4 of the 
 This is a jupyter notebook containing the code for part A question 5, guided backpropogation, of the assignment. The code runs guided backpropation on 10 random neurons in the last convolution layer of the model on an image from test dataset.
 
 **Note** : The data directory location is relative to our system directory structure. To reproduce the results set the data directory correctly to your data location while loading data.
+
+## Part B 
+
+**PartB.ipynb** :
+
+The data extraction is done using ImageDataGenerator available in keras.preprocessing . It converts our input images into size (224,224).
+
+It uses pretrained models existing in keras API for fine tuning to our iNaturalist Dataset.
+The models used were : 
+1) ResNet50
+2) InceptionV3
+3) InceptionResNetv2
+
+The next segment contains setting up the configuration for our sweep followed by code to setup the sweep and then the function to run in the sweep.
+
